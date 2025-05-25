@@ -1,12 +1,14 @@
-// Your Firebase configuration (replace with your own from Firebase Console)
-const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+// We enclose this in window.onload.
+// So we don't have ridiculous errors.
+window.onload = function() {
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyA8TgjEQAE89ffz62cWh4jfsYWZ3Bz9-0Q",
+  authDomain: "linkup-4b485.firebaseapp.com",
+  projectId: "linkup-4b485",
+  storageBucket: "linkup-4b485.firebasestorage.app",
+  messagingSenderId: "463846261877",
+  appId: "1:463846261877:web:80c7539868e6ab63eae43c"
 };
 
 // Initialize Firebase
