@@ -1,15 +1,24 @@
-// We enclose this in window.onload.
-// So we don't have ridiculous errors.
-window.onload = function() {
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-  apiKey: "AIzaSyA8TgjEQAE89ffz62cWh4jfsYWZ3Bz9-0Q",
-  authDomain: "linkup-4b485.firebaseapp.com",
-  projectId: "linkup-4b485",
-  storageBucket: "linkup-4b485.firebasestorage.app",
-  messagingSenderId: "463846261877",
-  appId: "1:463846261877:web:80c7539868e6ab63eae43c"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDDrrCh9XcUeIP0D2zWYy9b2D_xZ7aNP9c",
+  authDomain: "chat-room-6b83d.firebaseapp.com",
+  projectId: "chat-room-6b83d",
+  storageBucket: "chat-room-6b83d.firebasestorage.app",
+  messagingSenderId: "582882374053",
+  appId: "1:582882374053:web:c0b1f8ff67473078bc384c",
+  measurementId: "G-HW19267QWD"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
